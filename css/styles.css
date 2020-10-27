@@ -1,0 +1,141 @@
+html, body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
+    box-sizing: border-box;
+}
+*, *::before, *::after {    /*for components that may otherwise have a different behavior*/
+    box-sizing: inherit;
+  }
+*:focus {           /*for chrome's black borders when you select an element*/
+    outline: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.top-right-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.top-right-header li {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+    margin: 5px;
+    border: 1px solid transparent;
+}
+.top-right-header li img {
+    cursor: pointer;
+}
+.apps-icon {
+    width: 25px;
+    height: 25px;
+    filter: contrast(0%);
+}
+.apps-icon:hover {
+    filter: contrast(80%);
+}
+.profile-picture {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+}
+a {
+    text-decoration: none;
+    color: rgb(23,23,23);
+}
+a:hover {
+    text-decoration: underline;
+}
+.footer-container a {
+    color: rgb(100, 100, 100);
+}
+.footer-container a:active{
+    color: rgb(230, 90, 57);
+    text-decoration: underline;
+    
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 20px 0;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sbar {
+    width: 530px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 50px;
+    padding: 20px 10px 20px 15px;
+}
+#sbar:hover {
+    box-shadow: 2px 0 5px rgba(223, 225, 229, 0.7);
+}
+.search-bar-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px 250px 5px;
+}
+#button1 {
+    width: 130px;
+    height: 35px;
+    cursor: pointer;
+}
+#button2 {
+    width: 160px;
+    height: 35px;
+    cursor: pointer;
+}
+.search-bar-buttons button {
+    display: inline-block;
+    padding: 0 15px;
+    margin: 10px 5px;
+    justify-content: center;
+    border: 1px solid transparent;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    color:rgb(110, 110, 110);
+}
+.search-bar-buttons button:hover {
+    border: 1px solid rgba(43, 43, 43, 0.5);
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    color:rgb(43, 43, 43);
+}
+.bottom-left-footer li {
+    /*background-color: rgba(202, 202, 202, 0.2);*/
+    display: flex;
+    float: left;
+    padding: 15px 10px;
+    margin: 0px;
+    border: 1px solid transparent;
+}
+.bottom-right-footer li {
+    /*background-color: rgba(202, 202, 202, 0.2);*/
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding: 15px 10px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+}
+.footer-container {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: rgba(202, 202, 202, 0.2);
+    border-top: 1px solid  rgba(202, 202, 202, 0.6);
+}
